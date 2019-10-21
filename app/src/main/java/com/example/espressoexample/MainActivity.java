@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
+
     //widgets
     EditText edtEmail, edtPassword;
     Button btnLogin;
@@ -41,3 +42,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
