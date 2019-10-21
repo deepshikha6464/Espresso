@@ -37,5 +37,18 @@ public class MainActivityTest {
 
     }
 
+    @Test
+    public void checkingLoginFail() {
 
+        onView(withId(R.id.edt_email)).perform(typeText("deeps1234@gmail.com"), closeSoftKeyboard());
+
+        onView(withId(R.id.edt_pass)).perform(typeText("deeps1235"), closeSoftKeyboard());
+
+        onView(withId(R.id.btn_login)).perform(click());
+
+        onView(withId(R.id.tv_result)).check(matches(withText("LOGIN SUCCESS!")));
+
+
+
+    }
 }
